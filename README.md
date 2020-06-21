@@ -20,6 +20,8 @@ neúplnou cvičnou verzi ve vue.js (v ní chybí hlavně testy)
 - angular v9
 - angular material design komponenty
 - lokalizace pomocí ngx-translate
+    - en, cs, ru
+    - poslední volba jazyka uložená v localStorage
 - NgRx state management
 
 ### setup
@@ -29,7 +31,7 @@ neúplnou cvičnou verzi ve vue.js (v ní chybí hlavně testy)
 4. `ng serve --port 9000 -o`
 
 ### testy
-- `ng tests` 
+- `ng test` 
     - vzhledem k tomu, že ng komponenty v zásadě jen zabalují funkčnost, 
     která je primárně schována v NgRx, nebylo moc co testovat v komponentách
     a tak jsou dva základní unit testy definované nad state managementem
@@ -43,6 +45,7 @@ neúplnou cvičnou verzi ve vue.js (v ní chybí hlavně testy)
 - vč. podpory typescriptu
 - vuetify material design implementace
 - lokalizace pomocí vue-i18n
+    - en, cs, ru
 - základní "state management" ve třídě State, bez akcí a reducerů, nicméně
 zachovávající immutable princip
 
