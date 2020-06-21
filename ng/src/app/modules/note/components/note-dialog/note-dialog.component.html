@@ -1,0 +1,41 @@
+<h1 mat-dialog-title>
+  <ng-container *ngIf="loading else notLoading">{{ 'noteDialog.loadingNote' | translate }}</ng-container>
+  <ng-template #notLoading>
+    <ng-container *ngIf="note.id && !editing">{{ 'noteDialog.noteDetail' | translate }}</ng-container>
+    <ng-container *ngIf="note.id && editing">{{ 'noteDialog.editNote' | translate }}</ng-container>
+    <ng-container *ngIf="!note.id">{{ 'noteDialog.newNote' | translate }}</ng-container>
+  </ng-template>
+  <mat-icon (click)="onNoClick()">clear</mat-icon>
+</h1>
+
+<div mat-dialog-content>
+  <div class="spinner-container" *ngIf="loading else notLoadingContent">
+    <mat-spinner [diameter]="20"></mat-spinner>
+  </div>
+
+  <ng-template #notLoadingContent>
+    <form [formGroup]="noteFormGroup">
+
+      <mat-form-field style="width: 100%" appearance="outline">
+        <mat-label>{{ 'noteDialog.noteTitle' | translate }}</mat-label>
+        <input matInput [formControlName]="'title'" [placeholder]="'noteDialog.noteTitle' | translate">
+        <mat-error *ngIf="noteFormGroup.get('title').invalid">{{ 'noteDialog.requiredField' | translate }}</mat-error>
+      </mat-form-field>
+
+    </form>
+
+  </ng-template>
+</div>
+
+<div mat-dialog-actions *ngIf="!loading">
+  <ng-container *ngIf="!editing">
+    <button mat-stroked-button [routerLink]="'/note/' + note.id + '/edit'">{{ 'noteDialog.edit' | translate }}</button>
+  </ng-container>
+  <ng-container *ngIf="editing">
+    <button *ngIf="note.id !== 0" mat-stroked-button (click)="back()" [disabled]="saving">{{ 'noteDialog.back' | translate }}</button>
+    <button mat-flat-button color="primary" (click)="save()" [disabled]="saving" class="with-icon">
+      <mat-spinner [diameter]="15" *ngIf="saving"></mat-spinner>
+      {{ 'noteDialog.save' | translate }}
+    </button>
+  </ng-container>
+</div>

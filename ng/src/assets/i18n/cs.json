@@ -1,0 +1,19 @@
+{
+	"app.addNoteTooltip": "Přidat poznámku",
+	"app.deleteButton": "Smazat",
+	"app.openButton": "Zobrazit",
+	"app.realyDelete": "Opravdu smazat poznámku?",
+	"app.title": "Moje poznámky",
+	"msgbox.close": "Zavřít",
+	"msgbox.no": "Ne",
+	"msgbox.yes": "Ano",
+	"noteDialog.back": "Zpět",
+	"noteDialog.edit": "Upravit",
+	"noteDialog.editNote": "Úprava poznámky",
+	"noteDialog.loadingNote": "Načítání poznámky...",
+	"noteDialog.newNote": "Nová poznámka",
+	"noteDialog.noteDetail": "Detail poznámky",
+	"noteDialog.noteTitle": "Nadpis",
+	"noteDialog.requiredField": "Povinné pole",
+	"noteDialog.save": "Uložit"
+}

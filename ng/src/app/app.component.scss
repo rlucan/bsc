@@ -1,0 +1,39 @@
+:host {
+  .language {
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: auto;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: baseline;
+
+    > mat-card {
+      margin: 12px;
+      min-width: 150px;
+      max-width: 400px;
+    }
+  }
+
+  > button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+::ng-deep {
+  .mat-menu-panel {
+    min-width: auto !important;
+
+    button {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

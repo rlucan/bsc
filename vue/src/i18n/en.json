@@ -1,0 +1,19 @@
+{
+	"app.addNoteTooltip": "Add a new note",
+	"app.deleteButton": "Remove",
+	"app.openButton": "Open",
+	"app.realyDelete": "Really delete the note?",
+	"app.title": "My notes",
+	"msgbox.close": "Close",
+	"msgbox.no": "No",
+	"msgbox.yes": "Yes",
+	"noteDialog.back": "Back",
+	"noteDialog.edit": "Edit",
+	"noteDialog.editNote": "Edit note",
+	"noteDialog.loadingNote": "Loading note...",
+	"noteDialog.newNote": "New note",
+	"noteDialog.noteDetail": "Note detail",
+	"noteDialog.noteTitle": "Title",
+	"noteDialog.requiredField": "Required field",
+	"noteDialog.save": "Save"
+}

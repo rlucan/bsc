@@ -1,0 +1,19 @@
+{
+	"app.addNoteTooltip": "Добавить новую заметку",
+	"app.deleteButton": "Удалить",
+	"app.openButton": "Открыть",
+	"app.realyDelete": "Действительно удалить заметку?",
+	"app.title": "Мои заметки",
+	"msgbox.close": "Закрывать",
+	"msgbox.no": "нет",
+	"msgbox.yes": "да",
+	"noteDialog.back": "назад",
+	"noteDialog.edit": "редактировать",
+	"noteDialog.editNote": "Редактировать заметку",
+	"noteDialog.loadingNote": "Загрузка заметки...",
+	"noteDialog.newNote": "Новая заметка",
+	"noteDialog.noteDetail": "Примечание подробно",
+	"noteDialog.noteTitle": "заглавие",
+	"noteDialog.requiredField": "Обязательное поле",
+	"noteDialog.save": "Сохранить"
+}

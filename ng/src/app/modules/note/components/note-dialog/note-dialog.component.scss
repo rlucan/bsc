@@ -1,0 +1,30 @@
+:host {
+  [mat-dialog-title] {
+    position: relative;
+    > mat-icon {
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      cursor: pointer;
+    }
+  }
+
+  [mat-dialog-content] {
+    .spinner-container {
+      min-height: 122px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .with-icon {
+    ::ng-deep .mat-button-wrapper {
+      display: flex;
+      align-items: center;
+      > mat-spinner {
+        margin-right: 8px;
+      }
+    }
+  }
+}
