@@ -1,8 +1,7 @@
 import {async, TestBed} from '@angular/core/testing';
-import {AppComponent} from './app.component';
 import {Store, StoreModule} from '@ngrx/store';
 import * as state from './state/notes.reducer';
-import {AppState, notesReducer} from './state/notes.reducer';
+import {AppState, notesReducer} from './state';
 import {
   HTTP_INTERCEPTORS,
   HttpClientModule,
@@ -13,9 +12,9 @@ import {
   HttpResponse
 } from '@angular/common/http';
 import {EffectsModule} from '@ngrx/effects';
-import {NotesEffects} from './state/notes.effects';
+import {NotesEffects} from './state';
 import * as NoteActions from './state/notes.actions';
-import {Observable, of, ReplaySubject} from 'rxjs';
+import {Observable, of} from 'rxjs';
 
 export class ApiMockInterceptor implements HttpInterceptor {
 
@@ -23,7 +22,7 @@ export class ApiMockInterceptor implements HttpInterceptor {
 
     switch (request.url) {
       case 'notes':
-        return of(new HttpResponse({body: [{}, {}, {}]}));
+        return of(new HttpResponse({body: [{id: 1, title: 'Note 1'}, {id: 2, title: 'Note 2'}, {id: 3, title: 'Note 3'}]}));
       default:
         return of(new HttpResponse());
     }

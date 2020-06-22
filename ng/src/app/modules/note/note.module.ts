@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {NoteComponent} from './components/note/note.component';
 import {NoteRoutingModule} from './note-routing.module';
 import {NoteDialogComponent} from './components/note-dialog/note-dialog.component';
 import {MatDialogModule} from '@angular/material/dialog';
@@ -10,6 +9,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {TranslateModule} from '@ngx-translate/core';
+import {NoteComponent} from './components/note/note.component';
 
 @NgModule({
   declarations: [NoteComponent, NoteDialogComponent],
@@ -24,10 +24,8 @@ import {TranslateModule} from '@ngx-translate/core';
     MatButtonModule,
     MatIconModule,
     TranslateModule.forChild()
-  ],
-  // providers: [
-  //   FormBuilder
-  // ]
+  ]
 })
 export class NoteModule {
 }
+

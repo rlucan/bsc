@@ -1,9 +1,9 @@
-import {Component, Inject} from '@angular/core';
-import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
-import {AppState, Note} from '../../../../state/notes.reducer';
+import {Component} from '@angular/core';
+import {MatDialogRef} from '@angular/material/dialog';
+import {AppState, Note} from '@app/state';
 import {Store} from '@ngrx/store';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import * as NoteActions from '../../../../state/notes.actions';
+import * as NoteActions from '@app/state';
 import {Router} from '@angular/router';
 
 @Component({

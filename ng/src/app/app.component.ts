@@ -1,13 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {Store} from '@ngrx/store';
 import {Observable} from 'rxjs';
-import {AppState, Note} from './state/notes.reducer';
-import * as NoteActions from './state/notes.actions';
+import {AppState, Note} from '@app/state';
+import * as NoteActions from '@app/state';
 import {TranslateService} from '@ngx-translate/core';
-import {environment} from '../environments/environment';
-import {MessageBoxService} from './helpers/messasge-box.service';
+import {environment} from '@env/environment';
+import {MessageBoxService} from '@app/helpers';
 import {Title} from '@angular/platform-browser';
-import {Animations} from './animations';
+import {Animations} from '@app/animations';
 
 @Component({
   selector: 'app-root',

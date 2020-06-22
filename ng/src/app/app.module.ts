@@ -1,16 +1,15 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {APP_INITIALIZER, NgModule} from '@angular/core';
 
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
+import {AppRoutingModule} from '@app/app-routing.module';
+import {AppComponent} from '@app/app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HTTP_INTERCEPTORS, HttpClient, HttpClientModule} from '@angular/common/http';
 import {StoreModule} from '@ngrx/store';
 import {EffectsModule} from '@ngrx/effects';
-import {NotesEffects} from './state/notes.effects';
-import {notesReducer} from './state/notes.reducer';
+import {NotesEffects, notesReducer} from '@app/state';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
-import {environment} from '../environments/environment';
+import {environment} from '@env/environment';
 import {MatDialogModule} from '@angular/material/dialog';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
@@ -18,17 +17,11 @@ import {MatIconModule} from '@angular/material/icon';
 import {TranslateLoader, TranslateModule, TranslateService} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {MatMenuModule} from '@angular/material/menu';
-import {ApiInterceptor} from './helpers/api.interceptor';
-import {MessageBoxModalComponent} from './helpers/messasge-box.service';
+import {ApiInterceptor, MessageBoxModalComponent} from '@app/helpers';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatCardModule} from '@angular/material/card';
-
-// export function createTranslateLoader(http: HttpClient) {
-//   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
-// }
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);

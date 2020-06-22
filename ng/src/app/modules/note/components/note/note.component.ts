@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, NavigationStart, Router} from '@angular/router';
-import {AppState} from '../../../../state/notes.reducer';
+import {AppState} from '@app/state';
 import {Store} from '@ngrx/store';
 import {MatDialog} from '@angular/material/dialog';
 import {NoteDialogComponent} from '../note-dialog/note-dialog.component';
-import * as NoteActions from '../../../../state/notes.actions';
+import * as NoteActions from '@app/state';
 import {filter} from 'rxjs/operators';
 
 @Component({
