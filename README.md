@@ -6,7 +6,7 @@ neúplnou cvičnou verzi ve vue.js (v ní chybí hlavně testy)
     - soustředil jsem se hlavně na algoritmickou část a na věci, související s jednotlivými 
       frameworky. Nevěnoval jsem příliš pozornosti samotnému vzhledu aplikace - nejsem 
       designer. Částečně jsem se inspiroval u google keep (seznam poznámek v kartách, detail
-      pozvánky a její editace v dialogu, ...).
+      poznánky a její editace v dialogu, ...).
     - obě aplikace jsou řízené URL, takže např. `http://localhost:9000/note/1/edit` rovnou 
       otevře editaci poznámky číslo 1.  
     - do API komunikace vstupuje interceptor, který
