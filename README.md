@@ -1,5 +1,5 @@
 ## BSC
-- repo obsahuje řešení Úkolu pro uchazeče o pozici FE developer v BSC.
+- repo obsahuje řešení [Úkolu pro uchazeče o pozici FE developer v BSC.](http://lucan.cz/FE_ukol_2020.docx)
 - úlohu jsem se pokusil vyřešit primárně v angularu 9, nicméně přikládám i 
 neúplnou cvičnou verzi ve vue.js (v ní chybí hlavně testy)
 - společné znaky:
